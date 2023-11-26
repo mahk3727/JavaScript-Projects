@@ -13,7 +13,7 @@ function showDestinationDetails(destination) {
         descriptionElement.textContent = 'Experience the romance and charm of the City of Light.';
     } else if (destination === 'Tokyo') {
         titleElement.textContent = 'Tokyo';
-        imageElement.src = 'tokyo.jpg';
+        imageElement.src = 'https://github.com/mahk3727/JavaScript-Projects/blob/main/tokyo.jpg';
         descriptionElement.textContent = 'Discover the unique blend of tradition and modernity in Tokyo.';
     }
 
