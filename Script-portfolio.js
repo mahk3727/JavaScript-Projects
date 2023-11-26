@@ -9,7 +9,7 @@ function showDestinationDetails(destination) {
 
     if (destination === 'Paris') {
         titleElement.textContent = 'Paris';
-        imageElement.src = 'paris.jpg';
+        imageElement.src = 'https://github.com/mahk3727/JavaScript-Projects/blob/main/paris.jpg';
         descriptionElement.textContent = 'Experience the romance and charm of the City of Light.';
     } else if (destination === 'Tokyo') {
         titleElement.textContent = 'Tokyo';
