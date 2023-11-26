@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Agency</title>
+</head>
+<body>
+
+    <header>
+        <h1>Travel Adventures</h1>
+        <p>Your Journey Begins Here</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Travel Adventures</h2>
+        <p>Discover amazing destinations and plan your next adventure with us.</p>
+        <button onclick="showDestinations()">Explore Destinations</button>
+    </section>
+
+    <section id="destinations" class="hidden">
+        <h2>Popular Destinations</h2>
+        <div class="destination" onclick="showDestinationDetails('Paris')">
+            <img src="paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+        </div>
+        <div class="destination" onclick="showDestinationDetails('Tokyo')">
+            <img src="tokyo.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+        </div>
+    </section>
+
+    <section id="destination-details" class="hidden">
+        <h2 id="destination-title"></h2>
+        <img id="destination-image" src="" alt="">
+        <p id="destination-description"></p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Travel Adventures is a leading travel agency dedicated to providing unforgettable travel experiences.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or ready to plan your trip? Contact us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Travel Adventures</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
